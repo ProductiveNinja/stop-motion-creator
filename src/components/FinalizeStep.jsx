@@ -242,7 +242,7 @@ function FinalizeStep({ images, frameRate, onFrameRateChange }) {
         <>
           {/* Preview Section */}
           <div className="preview-section">
-            <h3>Preview</h3>
+            <h3>Vorschau</h3>
             <div className="preview-container">
               {" "}
               {
@@ -259,7 +259,7 @@ function FinalizeStep({ images, frameRate, onFrameRateChange }) {
               onClick={togglePreview}
               disabled={isGenerating || !isFrameRateInputValid}
             >
-              {isPlayingPreview ? "Stop Preview" : "Play Preview"}
+              {isPlayingPreview ? "Vorschau stoppen" : "Vorschau starten"}
             </button>
             {!isFrameRateInputValid && (
               <p className="warning">
@@ -270,7 +270,7 @@ function FinalizeStep({ images, frameRate, onFrameRateChange }) {
 
           {/* Settings Section */}
           <div className="settings-section">
-            <h3>Settings</h3>
+            <h3>Einstellungen</h3>
             <label htmlFor="frameRate">Bilder pro Sekunde (fps):</label>
             <input
               type="text" // Use text to allow empty string temporarily
