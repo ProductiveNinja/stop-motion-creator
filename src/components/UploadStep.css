@@ -1,0 +1,14 @@
+/* UploadStep.css */
+.upload-step {
+  text-align: center;
+  padding: 30px 10px;
+}
+.upload-step h2 {
+  margin-bottom: 15px;
+  color: #343a40;
+}
+.upload-step p {
+  color: #6c757d;
+  margin-bottom: 20px;
+}
+/* .file-input styled in App.css */

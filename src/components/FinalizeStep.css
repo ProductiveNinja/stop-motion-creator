@@ -1,0 +1,148 @@
+/* FinalizeStep.css */
+.finalize-step {
+  /* General padding/margin if needed */
+}
+
+.status-area {
+  background-color: #f8f9fa; /* Light background */
+  padding: 8px 15px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  border: 1px solid #dee2e6; /* Light border */
+  font-size: 0.9em;
+  color: #495057; /* Darker gray text */
+}
+.status-area p {
+  margin: 0;
+}
+.status-area strong {
+  color: #343a40; /* Slightly darker label */
+}
+
+.preview-section,
+.settings-section,
+.generate-section {
+  margin-bottom: 25px;
+  padding-bottom: 25px;
+  border-bottom: 1px solid #e9ecef; /* Light separator */
+}
+.finalize-step > div:last-child {
+  border-bottom: none; /* No border on the last section */
+}
+
+.preview-section h3,
+.settings-section h3,
+.generate-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: #495057; /* Section headings color */
+}
+
+.preview-container {
+  width: 100%;
+  max-width: 320px; /* Limit preview size */
+  height: 200px; /* Fixed height */
+  background-color: #e9ecef; /* Light background */
+  border: 1px solid #dee2e6;
+  margin: 0 auto 15px auto; /* Center */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Hide overflow */
+}
+
+.preview-image {
+  display: block;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.settings-section label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #495057;
+}
+
+.framerate-input {
+  padding: 8px 12px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  font-size: 1rem;
+  max-width: 100px; /* Limit width */
+}
+
+.generate-section button {
+  /* Uses button styles from App.css */
+  margin-right: 10px; /* Space between buttons */
+}
+
+.progress-indicator {
+  margin-top: 15px;
+}
+.progress-indicator p {
+  margin-bottom: 5px;
+  font-size: 0.9em;
+  color: #495057;
+}
+
+/* Custom progress bar */
+.progress-bar-wrapper {
+  height: 10px;
+  background-color: #e9ecef; /* Light background */
+  border-radius: 5px;
+  overflow: hidden; /* Clip the fill */
+  margin-top: 5px;
+  border: 1px solid #dee2e6;
+}
+
+.progress-bar-fill {
+  height: 100%;
+  background-color: #007bff; /* Blue fill */
+  width: 0%; /* Starts at 0 */
+  transition: width 0.3s linear; /* Smooth transition */
+  border-radius: 5px;
+}
+
+.download-section {
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px dashed #dee2e6; /* Dashed separator */
+}
+.download-section h3 {
+  margin-bottom: 15px;
+}
+.download-section video {
+  display: block;
+  margin-bottom: 15px;
+  max-width: 100%; /* Responsive video */
+  border: 1px solid #dee2e6;
+  border-radius: 4px;
+}
+
+.download-button {
+  /* Styled as button-primary in App.css */
+  display: inline-block; /* Allow margin/padding */
+  text-decoration: none;
+}
+
+.framerate-input.input-invalid {
+  border-color: #dc3545; /* Red border for invalid */
+  background-color: #fbe Parem; /* Light red background (optional) */
+}
+.framerate-input.input-invalid:focus {
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25); /* Red focus ring */
+}
+
+/* Ensure error messages below input are styled */
+.settings-section .error-message {
+  font-size: 0.85em;
+  margin-top: 5px;
+  /* color already defined in App.css */
+}
+.settings-section .warning {
+  font-size: 0.85em;
+  margin-top: 5px;
+  color: #fd7e14; /* Orange for warning */
+}

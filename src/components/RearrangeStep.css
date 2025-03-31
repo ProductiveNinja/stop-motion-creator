@@ -1,0 +1,93 @@
+/* RearrangeStep.css */
+.rearrange-step {
+  margin-top: 20px;
+}
+
+.image-list {
+  display: flex; /* Crucial for horizontal layout */
+  gap: 15px;
+  padding: 10px;
+  background-color: #e9ecef; /* Light background */
+  border: 1px dashed #adb5bd; /* Dashed border */
+  border-radius: 5px;
+  min-height: 150px;
+  align-items: flex-start; /* Align items */
+  overflow-y: hidden;
+  overflow-y: auto; /* Prevent vertical scrollbar if content fits */
+}
+
+/* Style when dragging over the container */
+.image-list.dragging-over {
+  background-color: #dee2e6;
+}
+
+.image-item {
+  position: relative; /* Needed for absolute positioning of button/index */
+  border: 1px solid #ced4da; /* Lighter border */
+  padding: 5px;
+  background-color: #ffffff; /* White background */
+  border-radius: 4px;
+  min-width: 100px;
+  height: 100px;
+  display: flex; /* Use flexbox to help center image */
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: grab; /* Indicate draggable */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  user-select: none; /* Prevent text selection during drag */
+  transition: background-color 0.2s ease; /* Smooth transition */
+}
+
+/* Style for the item being dragged */
+.image-item.dragging {
+  cursor: grabbing;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background-color: #f8f9fa; /* Slightly different background when dragging */
+}
+
+.image-item img {
+  max-width: 80%;
+  max-height: 70%;
+  display: block;
+  object-fit: contain;
+  pointer-events: none; /* Prevent image interfering with drag */
+}
+
+.delete-button {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: #dc3545; /* Bootstrap red */
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 22px; /* Slightly larger */
+  height: 22px;
+  font-size: 14px;
+  /* --- Centering the 'X' --- */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1; /* Reset line height */
+  /* --- End Centering --- */
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+  padding: 0; /* Remove padding if it affects centering */
+}
+
+.delete-button:hover {
+  background-color: #c82333; /* Darker red on hover */
+}
+
+.image-index {
+  position: absolute;
+  bottom: 3px; /* Adjust position */
+  left: 5px; /* Adjust position */
+  font-size: 11px; /* Slightly larger */
+  color: #495057; /* Darker gray */
+  background-color: rgba(255, 255, 255, 0.8); /* Slightly more opaque */
+  padding: 1px 4px;
+  border-radius: 3px;
+}

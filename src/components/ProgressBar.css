@@ -1,0 +1,83 @@
+/* ProgressBar.css */
+.progress-bar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 30px;
+  position: relative;
+  padding-top: 30px;
+}
+
+.progress-step {
+  text-align: center;
+  flex: 1;
+  position: relative;
+  color: #adb5bd; /* Lighter gray for inactive steps */
+  font-weight: normal;
+}
+
+.step-number {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: #e9ecef; /* Light gray background */
+  color: #495057; /* Darker gray text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 5px auto;
+  border: 2px solid #ced4da; /* Gray border */
+  font-size: 14px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.step-label {
+  font-size: 14px;
+  margin-top: 5px;
+  white-space: nowrap;
+}
+
+/* Completed Steps */
+.progress-step.completed .step-number {
+  background-color: #28a745; /* Green */
+  border-color: #28a745;
+  color: white;
+}
+.progress-step.completed {
+  color: #495057; /* Dark gray text for completed label */
+}
+
+/* Active Step */
+.progress-step.active .step-number {
+  background-color: #007bff; /* Blue */
+  border-color: #007bff;
+  color: white;
+}
+.progress-step.active {
+  font-weight: bold;
+  color: #007bff; /* Blue text for active label */
+}
+
+/* Progress Line */
+.progress-line-container {
+  position: absolute;
+  top: -18px;
+  left: 10%;
+  right: 10%;
+  height: 4px;
+  background-color: #dee2e6; /* Light gray line background */
+  z-index: 1;
+  border-radius: 2px; /* Rounded line */
+}
+
+.progress-line-fill {
+  height: 100%;
+  background-color: #28a745; /* Green fill for completed progress */
+  width: 0;
+  transition: width 0.4s ease-in-out;
+  border-radius: 2px; /* Rounded fill */
+}

@@ -1,0 +1,123 @@
+/* App.css */
+body {
+  font-family: sans-serif;
+  background-color: #f8f9fa; /* Light gray background */
+  color: #212529; /* Dark text */
+  margin: 0;
+  padding: 20px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.App {
+  max-width: 900px;
+  margin: 20px auto;
+  background-color: #ffffff; /* White background for app container */
+  padding: 20px 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #343a40; /* Darker heading */
+  margin-bottom: 30px;
+}
+
+.step-content {
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px solid #dee2e6; /* Light border */
+  border-radius: 5px;
+  background-color: #ffffff; /* White background for step area */
+  min-height: 300px; /* Ensure steps have some height */
+}
+
+.navigation-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 1px solid #dee2e6; /* Separator line */
+}
+
+/* Basic Button Styling */
+button,
+.button-primary, /* Class for primary action buttons */
+.file-input::file-selector-button /* Style the input's button */ {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Default Button */
+button {
+  background-color: #6c757d; /* Gray */
+  color: white;
+}
+button:hover {
+  background-color: #5a6268; /* Darker Gray */
+}
+button:disabled {
+  background-color: #ced4da;
+  cursor: not-allowed;
+}
+
+/* Primary Button (e.g., Next, Generate, Download) */
+.button-primary,
+.file-input::file-selector-button /* Make file input button look primary */ {
+  background-color: #007bff; /* Blue */
+  color: white;
+}
+.button-primary:hover,
+.file-input::file-selector-button:hover {
+  background-color: #0056b3; /* Darker Blue */
+}
+.button-primary:disabled {
+  background-color: #6caddf;
+}
+
+.error-message {
+  color: #dc3545; /* Red */
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.info,
+.warning,
+.loading-message {
+  font-size: 0.9em;
+  color: #6c757d; /* Gray text */
+  margin-top: 10px;
+}
+.warning {
+  color: #ffc107; /* Yellow/Orange */
+}
+
+/* Style file input itself slightly */
+.file-input {
+  margin-top: 15px;
+  font-size: 0.95rem;
+  color: #495057;
+}
+
+/* Make the actual input part less intrusive if desired */
+.file-input::-webkit-file-upload-button {
+  /* Chrome/Safari/Edge */
+  /* Already styled by ::file-selector-button */
+  /* You might add margin-right here if needed */
+  margin-right: 10px;
+}
+.file-input::file-selector-button {
+  /* Standard */
+  /* Already styled above */
+  margin-right: 10px;
+}
