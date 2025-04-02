@@ -13,6 +13,7 @@ function App() {
   const [frameRate, setFrameRate] = useState(10); // Default frame rate
 
   // --- Navigation ---
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   const nextStep = () => {
     if (currentStep < STEPS.length - 1) {
       setCurrentStep(currentStep + 1);
