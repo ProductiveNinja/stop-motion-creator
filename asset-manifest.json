@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/stop-motion-creator/static/css/main.d12c85d3.css",
-    "main.js": "/stop-motion-creator/static/js/main.be3f3884.js",
+    "main.js": "/stop-motion-creator/static/js/main.c5a6fb22.js",
     "static/js/726.7c7c4404.chunk.js": "/stop-motion-creator/static/js/726.7c7c4404.chunk.js",
     "index.html": "/stop-motion-creator/index.html",
     "main.d12c85d3.css.map": "/stop-motion-creator/static/css/main.d12c85d3.css.map",
-    "main.be3f3884.js.map": "/stop-motion-creator/static/js/main.be3f3884.js.map",
+    "main.c5a6fb22.js.map": "/stop-motion-creator/static/js/main.c5a6fb22.js.map",
     "726.7c7c4404.chunk.js.map": "/stop-motion-creator/static/js/726.7c7c4404.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.d12c85d3.css",
-    "static/js/main.be3f3884.js"
+    "static/js/main.c5a6fb22.js"
   ]
 }
